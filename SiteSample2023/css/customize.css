@@ -1,0 +1,30 @@
+.w3-theme {
+    color: #ffff !important;
+    background-color: #009f61 !important;
+}
+
+.w3-code {
+    border-left: 4px solid #009f61;
+}
+
+.w3-text-IE {
+    color:#006617 !important;
+}
+
+.w3-input-radio{
+    color:#929693 ;
+    padding-left: 10px;
+}
+
+.myMenu {
+    margin-bottom: 150px;
+}
+
+#Imagem {
+    display: none
+}
+
+#imagemSelecionada {
+    width: 20%;
+    height: auto;
+}
