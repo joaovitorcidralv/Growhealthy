@@ -1,0 +1,55 @@
+CREATE TABLE Academia (
+Nome_fantasia VARCHAR(50),
+CNPJ VARCHAR(20) PRIMARY KEY,
+Endereço VARCHAR(100) 
+CREF VARCHAR(30),
+CPF_Aluno NUMERIC
+CONSTRAINT FK_CPF_Aluno_acad FOREIGN KEY (CPF_Aluno)REFERENCES Aluno(CPF_Aluno),
+CONSTRAINT FK_CREF_acad FOREIGN KEY (CREF)REFERENCES Personal(CREF)
+);
+
+CREATE TABLE Personal (
+Nome VARCHAR(50),
+Genero Varchar(20),
+Email Varchar(50),
+CREF VARCHAR(30) PRIMARY KEY NOT NULL,
+login VARCHAR(50) NOT NULL,
+dt_nasc DATE,
+cpf VARCHAR(30),
+tipo VARCHAR(20),
+celular NUMERIC,
+senha VARCHAR(50) NOT NULL,
+ID_treino INT,
+CPF_Aluno numeric,
+CONSTRAINT fk_ID_treino_per foreign key(ID_treino) REFERENCES Treino(ID_treino)
+CONSTRAINT fk_CPF_Aluno_per foreign key(CPF_Aluno) REFERENCES Aluno(CPF_Aluno)
+);
+
+CREATE TABLE Aluno (
+CPF_Aluno NUMERIC PRIMARY KEY NOT NULL,
+login Varchar(50) NOT NULL,
+celular NUMERIC,
+Nome VARCHAR(50),
+Genero Varchar(20),
+Email Varchar(50),
+Restricoes_alimentares VARCHAR(100) NOT NULL,
+Restricoes_fisicas VARCHAR(100) NOT NULL,
+Peso INT NOT NULL,
+Altura INT NOT NULL,
+senha VARCHAR(50) NOT NULL,
+dt_nasc DATE,
+tipo VARCHAR(20),
+CREF VARCHAR(30) NOT NULL,
+ID_treino INT NOT NULL,
+
+);
+
+CREATE TABLE Treino (
+ID_treino INT PRIMARY KEY, 
+Data_criacao DATE NOT NULL, 
+Descricao VARCHAR(500) NOT NULL,
+CPF_Aluno NUMERIC,
+CREF VARCHAR(30),
+CONSTRAINT fk_CPF_aluno foreign key(CPF_Aluno) REFERENCES Aluno(CPF_Aluno),
+CONSTRAINT fk_CREF_treino foreign key(CREF) REFERENCES Personal(CREF)
+);
