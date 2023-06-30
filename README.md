@@ -1,6 +1,6 @@
 # GrowHealthy
 Aplicação criada na disciplina de Experiência Criativa, em 3° Período de Engenharia de Software.
-Criamos um site para academias pequenas poderem registrar seus profissionais(instrutores de treino e nutricionistas) e facilitar a interação com alunos, clientes.
+
 
 PERSONAL:
 ![image](https://github.com/Josemussy/GrowHealthy/assets/107360437/786ff9e0-79b1-4057-ad2a-281f98d8dcfd)
