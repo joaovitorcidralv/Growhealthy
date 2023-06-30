@@ -1,0 +1,31 @@
+
+
+
+.w3-code {
+    border-left: 4px solid #00bcd4;
+}
+
+.w3-text-cyan {
+    color:#00bcd4 !important;
+}
+
+.w3-text-cyan {
+    color:#00bcd4 !important;
+}
+.w3-input-radio{
+    color:#929693 ;
+    padding-left: 10px;
+}
+
+.myMenu {
+    margin-bottom: 150px;
+}
+
+#Imagem {
+    display: none
+}
+
+#imagemSelecionada {
+    width: 20%;
+    height: auto;
+}
